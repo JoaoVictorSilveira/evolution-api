@@ -4,7 +4,7 @@ services:
 
   api:
     container_name: evolution_api
-    image: atendai/evolution-api
+    image: atendai/evolution-api:v1.8.4
     restart: always
     ports:
       - 8980:8080
@@ -28,7 +28,7 @@ services:
       - CLEAN_STORE_CONTACTS=true
       - CLEAN_STORE_CHATS=true
       - AUTHENTICATION_TYPE=apikey
-      - AUTHENTICATION_API_KEY=0417bffg436346340417bff998hy897
+      - AUTHENTICATION_API_KEY=CHAVE-MD5
       - AUTHENTICATION_EXPOSE_IN_FETCH_INSTANCES=true
       - QRCODE_LIMIT=30
       - WEBHOOK_GLOBAL_ENABLED=false
